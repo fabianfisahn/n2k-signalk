@@ -24,7 +24,7 @@ module.exports = [
     filter: n2k => typeof n2k.fields.chemistry === 'string'
   },
   {
-    node: n2k => prefix(n2k) + '.capacity',
+    node: n2k => prefix(n2k) + '.capacity.nominal',
     value: n2k => n2k.fields.capacity * 3600,
     filter: n2k => typeof n2k.fields.capacity === 'number'
   },

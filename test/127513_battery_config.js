@@ -44,7 +44,7 @@ describe('127513 battery configuration status', function () {
       'pb (lead)'
     )
     tree.should.have.nested.property(
-      'electrical.batteries.0.capacity.value',
+      'electrical.batteries.0.capacity.nominal.value',
       360000
     )
     tree.should.have.nested.property(
@@ -90,7 +90,7 @@ describe('127513 battery configuration status', function () {
       false
     )
     tree.should.have.nested.property(
-      'electrical.batteries.1.capacity.value',
+      'electrical.batteries.1.capacity.nominal.value',
       720000
     )
   })
